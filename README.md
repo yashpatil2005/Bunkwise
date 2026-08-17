@@ -99,53 +99,70 @@ bunkwise/
 
 ---
 
-## ⚡ Quick Start
+## 📥 How to Install & Use
 
-### 📋 Prerequisites
+Whether you're a student looking to use the extension right away or a developer building from source, follow the simple steps below.
 
-Ensure you have the following installed on your machine:
+### Option 1: Quick Install (For Students & End Users)
+
+1. **Download Release**: Download the pre-built `bunkwise-extension.zip` from the [Releases](https://github.com/yashpatil2005/Bunkwise/releases) tab (or download the zip from this repo).
+2. **Unzip**: Extract the `.zip` archive to a folder on your computer.
+3. **Open Chrome Extensions**:
+   - Open Google Chrome (or Brave / Edge / Opera).
+   - Navigate to `chrome://extensions` in your URL bar.
+4. **Enable Developer Mode**: Toggle the **Developer mode** switch in the top-right corner.
+5. **Load Extension**:
+   - Click **Load unpacked** in the top-left corner.
+   - Select the extracted `dist/` folder.
+6. **Pin to Toolbar**: Click the extensions puzzle icon 🧩 in Chrome's top-right toolbar and pin **Bunkwise**.
+
+---
+
+### Option 2: Build from Source (For Developers)
+
+#### 📋 Prerequisites
 - **Node.js** (v18.0.0 or higher)
-- **npm** (v9.0.0 or higher) or **pnpm** / **yarn**
-- **Google Chrome**, **Brave**, **Edge**, or any Chromium-based browser supporting Manifest V3.
+- **npm** (v9.0.0 or higher)
 
-### 📥 1. Clone the Repository
+#### 🛠️ Steps
 
-```bash
-git clone https://github.com/yashpatil2005/Bunkwise.git
-cd bunkwise
-```
+1. **Clone the Repository**:
+   ```bash
+   git clone https://github.com/yashpatil2005/Bunkwise.git
+   cd Bunkwise
+   ```
 
-### 📦 2. Install Dependencies
+2. **Install Dependencies**:
+   ```bash
+   npm install
+   ```
 
-```bash
-npm install
-```
+3. **Build Extension**:
+   ```bash
+   npm run build
+   ```
+   *This compiles TypeScript and outputs the production bundle to `dist/`.*
 
-### 🛠️ 3. Build the Extension
+4. **Load into Chrome**:
+   - Go to `chrome://extensions`
+   - Enable **Developer Mode**
+   - Click **Load Unpacked** and select the generated `dist/` folder.
 
-To generate the production-ready extension build:
+5. **Hot Reloading / Development Server**:
+   ```bash
+   npm run dev
+   ```
 
-```bash
-npm run build
-```
+---
 
-This compiles TypeScript and packages the project into the `dist/` directory.
+## 🎯 How to Use Bunkwise
 
-### 🌐 4. Load into Chrome
+1. Log into your **MGM University ERP** portal (`erp.mgmu.ac.in`).
+2. Navigate to the **Attendance** tab to load your attendance table.
+3. (Optional) Open the **Schedule** tab to load your weekly timetable.
+4. Click the **Bunkwise** icon in your browser extension bar.
+5. View your safe bunk count, recovery targets, and run simulations!
 
-1. Open Google Chrome and navigate to `chrome://extensions`.
-2. Enable **Developer mode** using the toggle switch in the top-right corner.
-3. Click the **Load unpacked** button in the top-left toolbar.
-4. Select the `dist/` folder located in your cloned `bunkwise` project directory.
-5. Pin **Bunkwise** to your browser toolbar for quick access!
-
-### 🔄 5. Live Development Mode
-
-To edit code with Hot Module Replacement (HMR) for the popup:
-
-```bash
-npm run dev
-```
 
 ---
 
