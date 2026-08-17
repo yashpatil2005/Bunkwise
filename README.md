@@ -42,7 +42,7 @@ Bunkwise is designed with a clean separation between DOM parsing, calculation en
 ### 📐 System Diagram
 
 ```mermaid
-flowgraph TD
+graph TD
     subgraph Browser ["🌐 Chrome / Chromium Browser"]
         ERP["🏫 College ERP DOM<br/>(erp.mgmu.ac.in)"]
         CS["📜 Content Scripts<br/>(attendanceParser & scheduleParser)"]
